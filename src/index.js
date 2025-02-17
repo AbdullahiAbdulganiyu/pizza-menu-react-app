@@ -65,7 +65,7 @@ function Header() {
 function Menu() {}
 
 function Footer() {
-  return React.createElement("footer", null, "We'er are currently Open");
+  return React.createElement("footer", null, "We'er currently Open");
 }
 
 function Pizza() {
