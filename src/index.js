@@ -53,6 +53,7 @@ function App() {
       <Pizza />
       <Pizza />
       <Pizza />
+      <Footer />
     </div>
   );
 }
