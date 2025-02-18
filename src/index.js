@@ -81,12 +81,12 @@ function Menu() {
   );
 }
 
-function Pizza() {
+function Pizza(props) {
   return (
     <div>
-      <img src="pizzas/spinaci.jpg" alt="Pizza spinachi" />
-      <h3>Pizza Spinaci</h3>
-      <p>Tomato, mozarella, spinach, and ricotta cheese</p>
+      <img src={props.photoName} alt={props.name} />
+      <h3>{props.name}</h3>
+      <p>{props.ingredients}</p>
     </div>
   );
 }
