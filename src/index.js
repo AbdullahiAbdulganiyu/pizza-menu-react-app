@@ -72,10 +72,17 @@ function Menu() {
     <main className="menu">
       <h2>Our Menu</h2>
       <Pizza />
-      <Pizza />
-      <Pizza />
-      <Pizza />
     </main>
+  );
+}
+
+function Pizza() {
+  return (
+    <div>
+      <img src="pizzas/spinaci.jpg" alt="Pizza spinachi" />
+      <h3>Pizza Spinaci</h3>
+      <p>Tomato, mozarella, spinach, and ricotta cheese</p>
+    </div>
   );
 }
 
@@ -93,16 +100,6 @@ function Footer() {
     </footer>
   );
   //   return React.createElement("footer", null, "We'er currently Open");
-}
-
-function Pizza() {
-  return (
-    <div>
-      <img src="pizzas/spinaci.jpg" alt="Pizza spinachi" />
-      <h3>Pizza Spinaci</h3>
-      <p>Tomato, mozarella, spinach, and ricotta cheese</p>
-    </div>
-  );
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
