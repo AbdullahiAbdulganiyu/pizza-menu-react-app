@@ -122,7 +122,7 @@ function Footer() {
   return (
     <footer className="footer">
       {isOpen ? (
-        <Order closeHour={closeHour} />
+        <Order closeHour={closeHour} openHour={openHour} />
       ) : (
         <p>
           We're Happy to welcome you between {openHour}:00 and {closeHour}:00
@@ -133,11 +133,12 @@ function Footer() {
   //   return React.createElement("footer", null, "We'er currently Open");
 }
 
-function Order(props) {
+function Order({ closeHour, openHour }) {
   return (
     <div className="order">
       <p>
-        We're open until {props.closeHour}:00. Come visit us or order online.
+        We're open form {openHour}:00 until {closeHour}:00. Come visit us or
+        order online.
       </p>
       <button className="btn">Order</button>
     </div>
